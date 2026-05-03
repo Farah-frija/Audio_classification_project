@@ -1,0 +1,5 @@
+ast_env
+# Project specific
+*.npz
+data/ICBHI_final_database
+*.pth
