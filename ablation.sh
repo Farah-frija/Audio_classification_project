@@ -21,16 +21,9 @@ echo "========================================"
 python train.py --loss asl --asl_gamma_neg 4 --epochs 4 --checkpoint_dir ./checkpoints/asl_more_epocs --no_patch_mix --patch_mix_prob
 
 echo "========================================"
-echo " EXP 2 — Partial Step 2 (ASL + esam + PatchMix)"
+echo " EXP 2 — Partial Step 2 (ASL + PatchMix)"
 echo "========================================"
 python train.py --loss asl --asl_gamma_neg 4 --epochs 4 --checkpoint_dir ./checkpoints/PatchMix_more_epocs 
-
-
-echo "========================================"
-echo " EXP 3 — Full Step  (ASL + esam + PatchMix)"
-echo "========================================"
-python esam_train.py --loss asl --asl_gamma_neg 4 --epochs 4 --checkpoint_dir ./checkpoints/esam_more_epocs
-
 
 
 echo ""
